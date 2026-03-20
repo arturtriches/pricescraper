@@ -1,7 +1,6 @@
-
-import pandas as pd; import time; import random; import json
+import json
 from selenium import webdriver
-import selenium.webdriver.common.by
+import selenium.webdriver.common.by as achapreco
 from selenium.webdriver.chrome.options import Options
 options = Options()
 options.add_argument("--headless")
@@ -18,7 +17,7 @@ def num_transf(preco):
 def olhar_preco(URL):
     driver.get(URL)
     try:
-        preco = driver.find_element(selenium.webdriver.common.by.By.CLASS_NAME, "a-price")
+        preco = driver.find_element(achapreco.By.CLASS_NAME, "a-price")
         if preco:
             return preco.text.replace("\n",",")
     except AttributeError:
@@ -33,7 +32,7 @@ def printar():
         print(f"{nome}: {valor}")
         if(num_transf(valor) <= p["alvo"]): 
             print(f"{nome} está na margem de preço!")
-        
+    return None
         
 printar()
         
