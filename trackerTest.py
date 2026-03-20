@@ -1,24 +1,23 @@
-import requests
-from bs4 import BeautifulSoup
-import pandas as pd
-import time
-import json
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-    "Accept-Language": "pt-BR,pt;q=0.5"
-}
+
+import pandas as pd; import time; import random; import json
+from selenium import webdriver
+import selenium.webdriver.common.by
+from selenium.webdriver.chrome.options import Options
+options = Options()
+options.add_argument("--headless")
+options.add_argument("--no-sandbox")
+driver = webdriver.Chrome(options=options)
 
 def abrir_tabela():
     with open("config.json", 'r', encoding='utf-8') as arq:
        return json.load(arq)
 
 def olhar_preco(URL):
-    pagina = requests.get(URL, headers = HEADERS)
-    soup = BeautifulSoup(pagina.content, "html.parser")
+    driver.get(URL)
     try:
-        preco = soup.find("span",{"class":"a-price aok-align-center reinventPricePriceToPayMargin priceToPay apex-pricetopay-value"})
+        preco = driver.find_element(selenium.webdriver.common.by.By.CLASS_NAME, "a-price")
         if preco:
-            return preco.text
+            return preco.text.replace("\n",",")
     except AttributeError:
         return "Deu erro!"
 
@@ -28,7 +27,7 @@ def printar():
     for p in cfg["Itens"]:
         nome = p["nome"]
         url = p["url"]
-        print(f"Item: {nome}, {olhar_preco(url)}")
+        print(f"Item: {nome}: {olhar_preco(url)}")
         
 printar()
         
