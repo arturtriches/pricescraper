@@ -2,11 +2,18 @@
     "Itens":[
         {
             "nome": "Teclado",
-            "url": "https://www.amazon.com.br/Logitech-Retroiluminadas-Easy-Switch-dispositivos-920-010783/dp/B0B2V9WTS2/ref=pd_ci_mcx_mh_mcx_views_1_title?pd_rd_w=QcNX8&content-id=amzn1.sym.87e935c8-d687-4dd4-9dbf-8b9bdbb5018e%3Aamzn1.symc.c3d5766d-b606-46b8-ab07-1d9d1da0638a&pf_rd_p=87e935c8-d687-4dd4-9dbf-8b9bdbb5018e&pf_rd_r=1QV84MD754J43ZF8BJDC&pd_rd_wg=np52O&pd_rd_r=e8622955-1cc3-4d7a-b859-1391b72f3f40&pd_rd_i=B0B2V9WTS2"
+            "url": "https://www.amazon.com.br/Logitech-Retroiluminadas-Easy-Switch-dispositivos-920-010783/dp/B0B2V9WTS2/ref=pd_ci_mcx_mh_mcx_views_1_title?pd_rd_w=QcNX8&content-id=amzn1.sym.87e935c8-d687-4dd4-9dbf-8b9bdbb5018e%3Aamzn1.symc.c3d5766d-b606-46b8-ab07-1d9d1da0638a&pf_rd_p=87e935c8-d687-4dd4-9dbf-8b9bdbb5018e&pf_rd_r=1QV84MD754J43ZF8BJDC&pd_rd_wg=np52O&pd_rd_r=e8622955-1cc3-4d7a-b859-1391b72f3f40&pd_rd_i=B0B2V9WTS2",
+            "alvo": 849.90
         },
         {
             "nome": "Celular",
-            "url": "https://www.amazon.com.br/dp/B0GQWBYZ4R?aref=zSRY0kekXS&aaxitk=9180133db1aed74abe815cb07ce218ae&language=pt_BR&pf_rd_p=24540b24-b077-4b18-a859-f59b4aa8dfde&pf_rd_r=CZD3KCE5F7DCH50N0XAW&pd_rd_wg=gEK28&pd_rd_w=52XYw&pd_rd_r=c4b26754-e027-4f8d-8fc5-ddd1c0ed1a0e&ref=dacx_dp_593612794633049744_582354003237176420"
+            "url": "https://www.amazon.com.br/dp/B0GQWBYZ4R?aref=zSRY0kekXS&aaxitk=9180133db1aed74abe815cb07ce218ae&language=pt_BR&pf_rd_p=24540b24-b077-4b18-a859-f59b4aa8dfde&pf_rd_r=CZD3KCE5F7DCH50N0XAW&pd_rd_wg=gEK28&pd_rd_w=52XYw&pd_rd_r=c4b26754-e027-4f8d-8fc5-ddd1c0ed1a0e&ref=dacx_dp_593612794633049744_582354003237176420",
+            "alvo": 4999.90
+        },
+        {
+            "nome": "Controle",
+            "url": "https://www.amazon.com.br/PlayStation-DualSense-Controle-sem-fio/dp/B0CQKLS4RP/?_encoding=UTF8&pd_rd_w=jhAfw&content-id=amzn1.sym.8531100d-ca88-45dd-ba21-de3dd971a698&pf_rd_p=8531100d-ca88-45dd-ba21-de3dd971a698&pf_rd_r=ECV8EKE88B4AYB7QN9W1&pd_rd_wg=0lKHi&pd_rd_r=4913f726-5c08-4c6a-a476-a69109a2abeb&ref_=pd_hp_d_atf_unk",
+            "alvo": 349.90
         }
     ]
 }

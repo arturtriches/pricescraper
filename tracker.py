@@ -12,6 +12,9 @@ def abrir_tabela():
     with open("config.json", 'r', encoding='utf-8') as arq:
        return json.load(arq)
 
+def num_transf(preco):
+    return float(preco.replace("R$","").replace(".","").replace(",",".").strip())
+
 def olhar_preco(URL):
     driver.get(URL)
     try:
@@ -23,11 +26,14 @@ def olhar_preco(URL):
 
 def printar():
     cfg = abrir_tabela()
-    
     for p in cfg["Itens"]:
         nome = p["nome"]
         url = p["url"]
-        print(f"Item: {nome}: {olhar_preco(url)}")
+        valor = olhar_preco(url)
+        print(f"{nome}: {valor}")
+        if(num_transf(valor) <= p["alvo"]): 
+            print(f"{nome} está na margem de preço!")
+        
         
 printar()
         
